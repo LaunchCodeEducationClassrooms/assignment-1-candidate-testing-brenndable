@@ -13,11 +13,11 @@ let question
 let correctAnswer
 let candidateAnswer = ""
 let questions =
-[ "Who was the first American woman in space? " , // 0
-"True or false: 5000 meters = 5 kilometers. " ,  // 1
-"(5 + 3)/2 * 10 = ? " , // 2
-"Given the array [8, Orbit, Trajectory, 45] what entry is at index 2? " , // 3
-"What is the minimum crew size for the ISS? "] //4 
+[ "1) Who was the first American woman in space? " , // 0
+"2) True or false: 5000 meters = 5 kilometers. " ,  // 1
+"3) (5 + 3)/2 * 10 = ? " , // 2
+"4) Given the array [8, Orbit, Trajectory, 45] what entry is at index 2? " , // 3
+"5) What is the minimum crew size for the ISS? "] //4 
 let correctAnswers = 
 [ "Sally Ride",  // 0
 "True", // 1
@@ -30,18 +30,11 @@ let candidateAnswers = []
 
 // TODO 1.1b: Ask for candidate's name //
 
-let candiateName = input.question("Enter name : ")
+let candiateName = input.question("Candidate Name :  ")
  function askForName () {
    }
 
 askForName()
-
-let message = (`Welcome, ${candiateName} :) \nPlease answer the following questions: \n `)
-function printMessage() {
-   console.log(message)
-}
-
-printMessage()
 
 
 function askQuestion() {
@@ -92,8 +85,7 @@ function gradeQuiz(candidateAnswers) {
 
 
 function runProgram() {
-  askForName();
-  // TODO 1.1c: Ask for candidate's name //
+  
   
   askQuestion();
   gradeQuiz(this.candidateAnswers);
