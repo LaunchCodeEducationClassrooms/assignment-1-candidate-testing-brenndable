@@ -5,32 +5,32 @@ const input = require('readline-sync');
 
 // TODO 1.1a: Define candidateName // 
 
-let candidateName= "";
+let candidateName= ''
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 
 let question
 let correctAnswer
-let candidateAnswer = ""
+let candidateAnswer = ''
 let questions =
-[ "1) Who was the first American woman in space? " , // 0
-"2) True or false: 5000 meters = 5 kilometers. " ,  // 1
-"3) (5 + 3)/2 * 10 = ? " , // 2
-"4) Given the array [8, Orbit, Trajectory, 45] what entry is at index 2? " , // 3
-"5) What is the minimum crew size for the ISS? "] //4 
+[ '1) Who was the first American woman in space? ' ,
+ '2) True or false: 5000 meters = 5 kilometers. ' ,  
+ '3) (5 + 3)/2 * 10 = ? ' , 
+ '4) Given the array [8, Orbit, Trajectory, 45] what entry is at index 2? ' , 
+ '5) What is the minimum crew size for the ISS? '] 
 let correctAnswers = 
-[ "Sally Ride",  // 0
-"True", // 1
-"40", // 2
-"Trajectory", // 3
-"3" ] // 4
+[ 'Sally Ride',  
+'True', 
+'40', 
+'Trajectory', 
+'3' ] 
 let candidateAnswers = []
 
 
 
 // TODO 1.1b: Ask for candidate's name //
 
-let candiateName = input.question("Candidate Name :  ")
+let candiateName = input.question('Candidate Name :  ')
  function askForName () {
    }
 
@@ -75,9 +75,9 @@ function gradeQuiz(candidateAnswers) {
 
 
   if (grade >= 80) {
-    console.log(">>> Status : PASSED <<<") 
+    console.log('>>> Status : PASSED <<<') 
   } else {
-    console.log(">>> Status : FAILED <<<")
+    console.log('>>> Status : FAILED <<<')
   }
 
   return grade;
