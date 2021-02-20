@@ -20,7 +20,7 @@ let questions =
  '5) What is the minimum crew size for the ISS? '] 
 let correctAnswers = 
 [ 'Sally Ride',  
-'True', 
+'true', 
 '40', 
 'Trajectory', 
 '3' ] 
