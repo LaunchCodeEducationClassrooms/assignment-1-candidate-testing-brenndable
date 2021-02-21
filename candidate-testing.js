@@ -51,8 +51,10 @@ function gradeQuiz(candidateAnswers) {
   let grade = 0
   let correctNum = 0
 
+  console.clear(); 
+
   for (let i = 0; i < candidateAnswers.length; i++) {
-    console.log(`${i + 1}) ${questions[i]}`);
+    console.log(`${i + 1} ${questions[i]}`);
     console.log(`Your Answer: ${candidateAnswers[i]} \nCorrect Answer: ${correctAnswers[i]} \n`);
   }
   for (let i = 0; i < candidateAnswers.length; i++) {
