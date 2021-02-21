@@ -39,7 +39,7 @@ for (i = 0; i < questions.length; i++) {
 
 }
 
-function gradeQuiz(canAns) {
+function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
@@ -57,7 +57,7 @@ function gradeQuiz(canAns) {
       }
 
   }
-   
+
 
   grade = (correctNum / questions.length) * 100
   
@@ -75,11 +75,15 @@ function gradeQuiz(canAns) {
 
 
 function runProgram() {
-  
-  
+  askForName();
+  // TODO 1.1c: Ask for candidate's name //
+ console.log(`Name: ${candiateName}`)
+
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
+ 
+
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
