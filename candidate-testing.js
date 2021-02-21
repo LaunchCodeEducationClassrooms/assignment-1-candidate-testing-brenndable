@@ -41,6 +41,7 @@ function askQuestion() {
 for (let i = 0; i < questions.length; i++) {
   candidateAnswers[i] = input.question(questions[i])}
 
+  
   console.log("\n")
 
 }
@@ -49,13 +50,14 @@ function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
+
   let grade = 0
   let correctNum = 0
 
-  console.clear(); 
+   console.clear();
 
   for (let i = 0; i < candidateAnswers.length; i++) {
-    console.log(`${i + 1} ${questions[i]}`);
+    console.log(` ${i + 1} ${questions[i]} `);
     console.log(`Your Answer: ${candidateAnswers[i]} \nCorrect Answer: ${correctAnswers[i]} \n`);
   }
   for (let i = 0; i < candidateAnswers.length; i++) {
@@ -67,13 +69,13 @@ function gradeQuiz(candidateAnswers) {
   
   grade = (correctNum / questions.length) * 100
   
-  console.log( `>>> Overall Grade: ${grade}% (${correctNum} out of ${questions.length}) <<<`)
+  console.log( `>>> Overall Grade: ${grade}% (${correctNum} out of ${questions.length}) <<<`);
 
 
   if (grade >= 80) {
-    console.log('>>> Status: PASSED <<<') 
+    console.log('>>> Status: PASSED <<<');
   } else {
-    console.log('>>> Status: FAILED <<<')
+    console.log('>>> Status: FAILED <<<');
   }
 
   return grade;
@@ -83,7 +85,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
- console.log(`Hi ${candiateName} :) \nPlease answer the following questions: \n`)
+ console.log(`Hi ${candiateName} :) \nPlease answer the following questions: \n`);
 
 
   askQuestion();
