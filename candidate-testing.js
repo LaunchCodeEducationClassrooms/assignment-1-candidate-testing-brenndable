@@ -39,10 +39,10 @@ let candidateAnswers = [];
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 for (let i = 0; i < questions.length; i++) {
-  candidateAnswers[i] = input.question(questions[i])}
+  candidateAnswers.push(input.question("\n" + questions[i] + " "))}
 
   
-  console.log("\n")
+  console.log("\n");
 
 }
 
@@ -51,8 +51,8 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
 
-  let grade = 0
-  let correctNum = 0
+  let grade = 0;
+  let correctNum = 0;
 
    console.clear();
 
