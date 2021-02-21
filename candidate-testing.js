@@ -41,7 +41,8 @@ for (i = 0; i < questions.length; i++) {
   candidateAnswers[i] = input.question(questions[i])
 
   console.log(`Your answer : ${candidateAnswers[i]} `)
-  console.log(`Correct answer : ${correctAnswers[i]} \n`)
+  console.log(`Correct answer : ${correctAnswers[i]} `)
+  console.log("\n")
 }
 
 }
@@ -78,7 +79,8 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
- console.log(`Hi ${candiateName} \n`)
+ console.log(`Hi ${candiateName}`)
+ console.log("\n")
 
   askQuestion();
   gradeQuiz(this.candidateAnswers);
