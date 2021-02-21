@@ -45,16 +45,11 @@ function gradeQuiz(candidateAnswers) {
   let grade;
   let correctNum = 0
 
-  for (let i = 0; i < questions.length; i++) {
-    let canAns = candidateAnswers[i].toLowerCase();
-    let correctAns = correctAnswers[i].toLowerCase();
+  for (let i = 0; i < questions.length; i++) 
+  {    correctNum += Number (
+    candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase())
 
     
-    if (canAns === correctAns)
-    {
-      correctNum++
-      }
-
   }
 
 
